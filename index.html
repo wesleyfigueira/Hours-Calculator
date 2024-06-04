@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hours Calculator</title>
+    <link rel="stylesheet" media="screen and (max-width: 680px)" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <div class="title">
+            <h1>Welcome</h1>
+            <h3>Calculate your hours</h3>
+        </div>
+    </header>
+    <hr>
+    <main>
+        <div class="hoursGeneral">
+            <p>How many hours YOU need to work this period ?*</p>
+            <input type="number" name="horas" id="horas">
+        </div>
+        <div class="daysGeneral">
+            <p>How many days do you need to work this period ?*</p>
+            <input type="number" name="days" id="days">
+        </div>
+
+        <div class="button">
+            <button onclick="calculator()" id="calculate">Calculate</button>
+        </div>
+
+        <div class="resultado">
+            <h1 id="resultadoFinal"></h1>
+        </div>
+
+        <div class="remember">
+            <h4> Remember every 0.25 hours is equivalent to 15 minutes</h4>
+        </div>
+
+        <div class="table">
+            <p>Examples:</p>
+            <table>
+                <tr>
+                  <th>Results</th>
+                  <th>Total of Hours</th>
+                </tr>
+                <tr>
+                  <td>4.50</td>
+                  <td>4:30</td>
+                </tr>
+                <tr>
+                  <td>3.75</td>
+                  <td>3:45</td>
+                </tr>
+              </table>
+        </div>
+
+
+    </main>
+    <script src="scripts/calculator.js"></script>
+</body>
+</html>
